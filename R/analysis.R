@@ -37,5 +37,12 @@ getData <- function() {
 #' @param data A data.frame
 #' @return A data.frame
 dataSummary <- function(data) {
-    aggregate(dbid ~ taxid, data, length)
+    #aggregate(dbid ~ taxid, data, length)
+    data %>%
+        group_by(taxid) %>%
+        select(dbid) %>%
+        count(name="dbid") %>%
+        as.data.frame()
 }
+
+utils::globalVariables(c("dbid", "taxid"))

@@ -8,7 +8,7 @@ Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Description: Mies van der Rohe said 'Less Is More' and we are looking at this through the
  lense of two packages. This is the tidyverse edition.
 License: GPL (>= 2)
-Imports: DBI, RPostgres
+Imports: DBI, RPostgres, dplyr, magrittr
 Suggests: testthat (>= 3.0.0), knitr, rmarkdown
 VignetteBuilder: knitr
 Encoding: UTF-8
