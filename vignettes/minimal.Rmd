@@ -1,0 +1,19 @@
+---
+title: "Less Is More -- Tidyverse Edition"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Less Is More -- Tidyverse Edition}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Demo
+
+A quick example of accessing (public) data (from a PostgreSQL database) and summarising it.
+
+
+```{r Example}
+library(lim.tidy)
+data <- getData()
+res <- dataSummary(data)
+res
